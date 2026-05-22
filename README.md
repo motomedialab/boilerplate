@@ -29,3 +29,13 @@ It'll copy the following stubs into your project:
 - `stubs/pint.json` to the root of your project
 - `stubs/.prettierignore` to the root of your project
 - `stubs/.prettierrc.json` to the root of your project
+
+## Installed npm functions
+
+It'll install the following commands in your `package.json`:
+
+```
+"format": "npx prettier --write resources",
+"check": "npx prettier --check resources",
+"preflight": "npm run format && ./vendor/bin/rector && ./vendor/bin/phpstan --memory-limit=2G && ./vendor/bin/pint --parallel && ./vendor/bin/pest --parallel"
+```
