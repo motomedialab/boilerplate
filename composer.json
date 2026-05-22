@@ -1,0 +1,26 @@
+{
+    "name": "motomedialab/boilerplate",
+    "description": "Boilerplate setup",
+    "type": "library",
+    "version": "0.1.0",
+    "require": {
+        "laravel/framework": "*"
+    },
+    "require-dev": {
+        "laravel/pao": "*",
+        "driftingly/rector-laravel": "*",
+        "larastan/larastan": "*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Motomedialab\\Boilerplate\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Motocom",
+            "email": "digital@motocom.co.uk"
+        }
+    ]
+}
