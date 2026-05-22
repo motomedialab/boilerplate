@@ -1,7 +1,24 @@
 # MotoMediaLab Boilerplate
 
 This is a boilerplate to be installed on a Laravel project.
-It enforces coding standards.
+It enforces coding standards and sets up code analysis and formatting tools automatically.
+
+## Installation
+
+Install the package as a development dependency in your Laravel project:
+
+```bash
+composer require --dev motomedialab/boilerplate
+```
+
+> [!IMPORTANT]
+> This package **must** be installed in the `require-dev` block. If you attempt to install it in `require`, the installation will fail to prevent deployment of dev tools to production.
+
+### What happens automatically on install:
+When you install the package, it hooks into Laravel's package discovery to automatically:
+1. Copy formatting and analysis configuration stubs to your project root.
+2. Inject formatting scripts (`format`, `check`, and `preflight`) into your `package.json`.
+3. Install frontend styling and formatting node packages via npm.
 
 ## PHP Packages
 

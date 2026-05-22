@@ -4,17 +4,23 @@
     "type": "library",
     "version": "0.1.0",
     "require": {
-        "laravel/framework": "*"
-    },
-    "require-dev": {
+        "laravel/framework": "*",
         "laravel/pao": "*",
         "driftingly/rector-laravel": "*",
-        "larastan/larastan": "*"
+        "larastan/larastan": "*",
+        "laravel/pint": "*"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
             "Motomedialab\\Boilerplate\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Motomedialab\\Boilerplate\\BoilerplateServiceProvider"
+            ]
         }
     },
     "authors": [
