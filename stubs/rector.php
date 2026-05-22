@@ -11,8 +11,6 @@ return RectorConfig::configure()
         __DIR__.'/app',
         __DIR__.'/bootstrap',
         __DIR__.'/config',
-        __DIR__.'/lang',
-        __DIR__.'/modules',
         __DIR__.'/routes',
     ])
     // uncomment to reach your current PHP version
@@ -25,7 +23,7 @@ return RectorConfig::configure()
         LaravelSetList::LARAVEL_CONTAINER_STRING_TO_FULLY_QUALIFIED_NAME,
         LaravelSetList::LARAVEL_ELOQUENT_MAGIC_METHOD_TO_QUERY_BUILDER,
         LaravelSetList::LARAVEL_FACADE_ALIASES_TO_FULL_NAMES,
-//        LaravelSetList::LARAVEL_FACTORIES,
+        LaravelSetList::LARAVEL_FACTORIES,
         LaravelSetList::LARAVEL_IF_HELPERS,
         LaravelSetList::LARAVEL_LEGACY_FACTORIES_TO_CLASSES,
     ])

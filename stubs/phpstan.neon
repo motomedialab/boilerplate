@@ -3,11 +3,9 @@ includes:
     - vendor/nesbot/carbon/extension.neon
 
 parameters:
-
+    # Define the paths we should be checking
     paths:
         - app/
-        - modules/groupo/
-        - modules/connector/
 
     # Level 10 is the highest level
     level: 5
@@ -15,5 +13,5 @@ parameters:
 #    ignoreErrors:
 #        - '#PHPDoc tag @var#'
 #
-    excludePaths:
-        - modules/groupo/config/groupo.php
+#    excludePaths:
+#        -
