@@ -15,6 +15,9 @@ return RectorConfig::configure()
     ])
     // uncomment to reach your current PHP version
     ->withPhpSets()
+    ->withRules([
+        RectorLaravel\Rector\ClassMethod\AddGenericReturnTypeToRelationsRector::class,
+    ])
     ->withSets([
         LaravelSetList::LARAVEL_ARRAYACCESS_TO_METHOD_CALL,
         LaravelSetList::LARAVEL_ARRAY_STR_FUNCTION_TO_STATIC_CALL,
@@ -26,6 +29,8 @@ return RectorConfig::configure()
         LaravelSetList::LARAVEL_FACTORIES,
         LaravelSetList::LARAVEL_IF_HELPERS,
         LaravelSetList::LARAVEL_LEGACY_FACTORIES_TO_CLASSES,
+        SetList::EARLY_RETURN,
+        SetList::CODING_STYLE,
     ])
     ->withComposerBased(laravel: true)
     ->withSetProviders(LaravelSetProvider::class)
