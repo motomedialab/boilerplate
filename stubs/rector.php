@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Rector\Config\RectorConfig;
+use Pest\Rector\Set\PestSetList;
 use RectorLaravel\Set\LaravelSetList;
 use RectorLaravel\Set\LaravelSetProvider;
 
@@ -31,6 +32,8 @@ return RectorConfig::configure()
         LaravelSetList::LARAVEL_LEGACY_FACTORIES_TO_CLASSES,
         SetList::EARLY_RETURN,
         SetList::CODING_STYLE,
+        SetList::PHP_85,
+        PestSetList::CODING_STYLE,
     ])
     ->withComposerBased(laravel: true)
     ->withSetProviders(LaravelSetProvider::class)
