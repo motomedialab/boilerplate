@@ -7,11 +7,6 @@ parameters:
     paths:
         - app/
 
-    # Define additional config directories
-    configDirectories:
-        - config
-    #   - /path/to/your/additional/config
-
     # Level 10 is the highest level
     level: 5
 
