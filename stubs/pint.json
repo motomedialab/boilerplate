@@ -9,6 +9,9 @@
             "sort_algorithm": "length"
         },
         "blank_line_between_import_groups": false,
-        "ordered_class_elements": true
+        "ordered_class_elements": true,
+        "concat_space": {
+            "spacing": "one"
+        }
     }
 }
